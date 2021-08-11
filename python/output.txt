@@ -1,0 +1,14 @@
+ Volume in drive F has no label.
+ Volume Serial Number is 3EB6-AFC0
+
+ Directory of F:\mani\2\python
+
+25-06-2021  04:43 PM    <DIR>          .
+25-06-2021  04:43 PM    <DIR>          ..
+25-06-2021  04:43 PM                 0 output.txt
+24-06-2021  06:38 PM    <DIR>          pandas
+25-06-2021  04:43 PM               111 sample.py
+24-06-2021  08:04 PM                10 text.txt
+24-06-2021  08:05 PM                 0 text1.txt
+               4 File(s)            121 bytes
+               3 Dir(s)  220,432,633,856 bytes free

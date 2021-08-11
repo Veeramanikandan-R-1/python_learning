@@ -1,0 +1,9 @@
+import re
+mobile_number=input("enter a mobile no")
+validation=re.findall("[0-9]",mobile_number)
+validation2=re.search("^[6-9].*[0-9]$",mobile_number)
+#print(validation2)
+if(validation2 and (len(validation)==10)):
+	print("true")
+else:
+	print("not a valid number")
