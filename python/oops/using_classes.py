@@ -14,6 +14,7 @@ class employee:
 emp1=employee('mani','kandan',25000)
 emp2=employee('harish','kannan',30000)
 
+
 print(emp1.email)
 print(emp2.email)
 print(emp1.full_name()) #to call a method we need paranthesis if we fail it prints method not return values
