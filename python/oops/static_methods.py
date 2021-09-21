@@ -12,7 +12,7 @@ class employee:
     def full_name(self): #automatically takes instance attributes as self if we don't put error received
         return '{} {}'.format(self.first,self.last)
 
-    def apply_increment(self):
+    def apply_increment(self):#instance method
         self.pay=int(self.pay * self.raise_amount)  #don't simply mention raise amount or use self.raise_amount
         # self.pay=int(self.pay*1.04)
 
