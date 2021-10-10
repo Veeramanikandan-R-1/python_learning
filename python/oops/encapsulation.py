@@ -8,6 +8,9 @@ class computer:
     def setMaxPrice(self,price):
         self.__max_price=price
 
+    def getter(self):
+        print(self.__max_price)
+
 c=computer()
 c.sell()
 
@@ -17,3 +20,5 @@ c.sell()
 c.setMaxPrice(1000) #change using setter function possible
 c.sell()
 
+c.getter()
+# print(c.__max_price) #couldn't access max price

@@ -44,5 +44,3 @@ new_emp1=employee.from_string(emp_str1)
 
 print(new_emp1.email)
 print(new_emp1.pay)
-
-print()

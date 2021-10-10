@@ -1,0 +1,28 @@
+db 
+customer tb
+customer id
+name
+phone no
+
+product tb
+product_id
+product_name
+product_price_per_unit
+
+sales tb
+sales_id
+customer_id
+product_id
+no_of_pieces
+total_price
+
+
+select customer_tb.name,customer_tb.phone_no,product_tb.product_name,product_tb.product_price_per_unit,sale_tb.sale_date,sale_tb.no_of_units from ((sale_tb inner join customer_tb on customer_tb.customer_id=sale_tb.customer_id) inner join product_tb on product_tb.product_id=sale_tb.product_id);
+
+select customer_tb.name,customer_tb.phone_no,product_tb.product_name,product_tb.product_price_per_unit,sale_tb.sale_date,sale_tb.no_of_units from sale_tb,customer_tb,product_tb where customer_id in ('1','2');
+
+select count(sales_id) from sale_tb where sale_date='2021-10-06';
+
+update sale_tb set price_per_unit=(select product_price_per_unit from product_tb where sale_tb.product_id=product_tb.product_id); 
+
+update sale_tb set total_price=no_of_units*price_per_unit;

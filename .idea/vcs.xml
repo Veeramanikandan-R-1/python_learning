@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pyhton_exercise/python/machine_learning/maching_learning_learning" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pyhton_exercise/python/pandas/python_pandas/python_pandas" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/python/machine_learning/maching_learning_learning" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/python/pandas/python_pandas/python_pandas" vcs="Git" />
   </component>
