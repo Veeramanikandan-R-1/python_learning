@@ -1,0 +1,18 @@
+04-Oct-21 11:14:38 - 8084 - first logger - DEBUG - debug
+04-Oct-21 11:14:38 - 8084 - first logger - INFO - mani's info
+04-Oct-21 11:14:38 - 8084 - first logger - WARNING - warning
+04-Oct-21 11:14:38 - 8084 - first logger - ERROR - error
+04-Oct-21 11:14:38 - 8084 - root - ERROR - exception occured
+Traceback (most recent call last):
+  File "F:\mani\2\python_learning\python\logging\sample_log.py", line 12, in <module>
+    c=a/b
+ZeroDivisionError: division by zero
+04-Oct-21 11:16:20 - 12064 - __main__ - DEBUG - debug
+04-Oct-21 11:16:20 - 12064 - __main__ - INFO - mani's info
+04-Oct-21 11:16:20 - 12064 - __main__ - WARNING - warning
+04-Oct-21 11:16:20 - 12064 - __main__ - ERROR - error
+04-Oct-21 11:16:20 - 12064 - root - ERROR - exception occured
+Traceback (most recent call last):
+  File "F:\mani\2\python_learning\python\logging\sample_log.py", line 12, in <module>
+    c=a/b
+ZeroDivisionError: division by zero

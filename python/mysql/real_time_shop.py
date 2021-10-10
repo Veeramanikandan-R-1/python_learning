@@ -1,6 +1,8 @@
 import re
 import traceback
 import mysql.connector
+import logging
+logging.basicConfig(level=logging.DEBUG,filename='sample.log',filemode='a',format='%(asctime)s - %(process)d - %(name)s - %(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 mydb=mysql.connector.connect(
 host="localhost",
 user="root",
