@@ -1,8 +1,10 @@
 import re
 import traceback
 import mysql.connector
+
 import logging
 logging.basicConfig(level=logging.DEBUG,filename='sample.log',filemode='a',format='%(asctime)s - %(process)d - %(name)s - %(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
+
 mydb=mysql.connector.connect(
 host="localhost",
 user="root",
@@ -12,13 +14,17 @@ database="college_details"
 
 cursor=mydb.cursor()
 
+logger=logging.getLogger(__name__)
+
 def fetching_products():
 	try:
 		cursor.execute("select product_name from product_tb;")
 		existing_products=[x[0] for x in cursor.fetchall()]
 		return existing_products
 	except Exception as error:
-		print("error occured\n")
+		# print("error occured\n")
+		# print(traceback.format_exc())
+		logger.error(traceback.format_exc())
 
 def fetching_customer():
 	try:
@@ -30,8 +36,9 @@ def fetching_customer():
 		#print(existing_user_phone_no)
 		return existing_user,existing_user_phone_no
 	except Exception as error:
-		print("error occured\n",error)
-		print(traceback.format_exc())
+		# print("error occured\n",error)
+		# print(traceback.format_exc())
+		logger.error(traceback.format_exc())
 
 def add_customer():
 	try:
@@ -71,8 +78,9 @@ def add_customer():
 			return print('already existing user try with different name/mobile number')
 		return name
 	except Exception as error:
-		print("error occured\n",error)
-		print(traceback.format_exc())
+		# print("error occured\n",error)
+		# print(traceback.format_exc())
+		logger.error(traceback.format_exc())
 
 def adding_product():
 	try:
@@ -95,8 +103,9 @@ def adding_product():
 			return print('product already exists')
 
 	except Exception as error:
-		print("error occured\n",error)
-		print(traceback.format_exc())
+		# print("error occured\n",error)
+		# print(traceback.format_exc())
+		logger.error(traceback.format_exc())
 
 def sale_fun():
 	try:
@@ -116,6 +125,9 @@ def sale_fun():
 		# print(bill_id)
 
 		add_product_list = []
+
+	except Exception as error:
+		logger.error(traceback.format_exc())
 
 		def add_product():
 			try:
@@ -301,3 +313,4 @@ while True:
 				break
 			else:
 				print('enter valid choice')
+				mydb.close()
