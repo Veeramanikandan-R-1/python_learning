@@ -1,42 +1,20 @@
 {
-    "9159250701": {
-        "First_name": "mani2",
-        "Lastname": "kandan",
-        "Mobile_no": "9159250701",
-        "Email_id": "mani@gmail.com",
-        "Address": "chennai"
-    },
-    "9874562136": {
-        "First_name": "shriram",
-        "Lastname": "s",
-        "Mobile_no": "9874562136",
-        "Email_id": "shri@gmail.com",
-        "Address": "chennai"
-    },
     "9874561236": {
-        "First_name": "prasanth",
-        "Lastname": "s",
-        "Mobile_no": "9874561236",
-        "Email_id": "pra@gmail.com",
-        "Address": "chennai",
-        "Balance": 0
-    },
-    "9871234565": {
         "First_name": "ragul",
-        "Lastname": "manickam",
-        "Mobile_no": "9871234565",
+        "Lastname": "m",
+        "Mobile_no": "9874561236",
         "Email_id": "ragul@gmail.com",
         "Address": "chennai",
         "Balance": 0,
-        "Account_number": 1
+        "Account_number": 3
     },
-    "9635257418": {
+    "9632587414": {
         "First_name": "hanish",
-        "Lastname": "kumar",
-        "Mobile_no": "9635257418",
+        "Lastname": "s",
+        "Mobile_no": "9632587414",
         "Email_id": "hanish@gmail.com",
-        "Address": "egmore",
-        "Balance": 200,
-        "Account_number": 2
+        "Address": "chennai",
+        "Balance": 0,
+        "Account_number": 4
     }
 }

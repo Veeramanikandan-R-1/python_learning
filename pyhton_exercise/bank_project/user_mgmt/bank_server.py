@@ -17,9 +17,10 @@ class bank_server(basic_functions):
         elif type=='Mobile_no':
             user_details=bank_server.read_json(user_detail_json_path)
             condition=re.findall('^(0|91)?[7-9][0-9]{9}$',value)
-            if (value in list(user_details.keys())):
-                print('mobile no already registered')
-                condition=False
+            if user_details != 'Failure':
+                if (value in list(user_details.keys())):
+                    print('mobile no already registered')
+                    condition=False
         elif type=='Email_id':
             condition=re.findall('[a-z0-9]{3,25}@gmail.com',value)
 
@@ -123,5 +124,5 @@ class bank_server(basic_functions):
 
 
 abc_bank=bank_server()
-# abc_bank.get_user_details()
-abc_bank.deposit_or_withdraw()
+abc_bank.get_user_details()
+# abc_bank.deposit_or_withdraw()

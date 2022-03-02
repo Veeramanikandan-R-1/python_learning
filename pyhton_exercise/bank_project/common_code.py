@@ -10,7 +10,7 @@ class basic_functions():
                     json_content = json.load(read_file)
                     return json_content
         except Exception as error:
-            print('file is empty')
+            # print('file is empty')
             return 'Failure'
 
     def write_json(file_path,content):
@@ -20,5 +20,5 @@ class basic_functions():
                     file.write(json.dumps(content,indent=4))
                     return 'success'
         except Exception as error:
-            print('file is empty')
+            # print('file is empty')
             return 'Failure'
