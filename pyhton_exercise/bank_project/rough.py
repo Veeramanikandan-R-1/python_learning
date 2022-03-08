@@ -1,4 +1,5 @@
-import re
-value='32223232323mdfasdf@gmail.com65654654654654654'
-condition=re.findall('^[a-z0-9]{3,25}@gmail.com$',value)
-print(condition)
+import json
+
+from common_macros import *
+with open(user_detail_json_path,'r') as file:
+    print(json.loads(file.read()))
