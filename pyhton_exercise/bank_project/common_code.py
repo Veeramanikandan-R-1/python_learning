@@ -1,7 +1,6 @@
 import json,os
 import logging
 
-
 class basic_functions():
     def read_json(file_path):
         try:
@@ -18,6 +17,10 @@ class basic_functions():
             if (os.path.isfile(file_path)):
                 with open(file_path, "w") as file:
                     file.write(json.dumps(content,indent=4))
+                    return 'success'
+            else:
+                with open(file_path, "w") as file:
+                    file.write(json.dump(content,indent=4))
                     return 'success'
         except Exception as error:
             # print('file is empty')
